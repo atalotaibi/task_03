@@ -3,6 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>List</title>
+    </br>
+    {% for item in my_list %}
+        <ul>
+            <li>
+                <h1>{{item.restaurant_name}}</h1>
+            </li>
+            <li>
+                <p>{{item.food_typ}}</p>
+            </li>
+        </ul><br>
+    {% endfor %}
     </head>
     <body>
 
